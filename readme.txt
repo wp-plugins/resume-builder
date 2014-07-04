@@ -29,10 +29,6 @@ Build out your complete resume, contact info and skills list with this powerful 
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Navigate to the Resumes > Add New to build out your first resume with the drag & drop builder
 
-== Frequently Asked Questions ==
-
-== Screenshots ==
-
 == Changelog ==
 
 = 1.0 =

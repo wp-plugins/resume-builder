@@ -16,12 +16,18 @@ Build out your complete resume, contact info and skills list with this powerful 
 
 == Description ==
 
-Build out your complete resume, contact info and skills list with this powerful plugin. Includes the following features:
+Build out your complete resume, contact info and skills list with this powerful plugin.
 
-* A powerful and exclusive Resume Builder to build out your resume, skillset and contact information
-* Includes four great shortcodes for displaying your resume, skills and contact information in different locations
-* Includes a widget to place one of the shortcodes so you can display your information anywhere
-* Responsive and should work perfectly with most themes
+**Includes the following features:**
+
+* Includes four great shortcodes for displaying your resume, skills and contact information in different locations.
+* Includes a widget to place one of the shortcodes so you can display your information anywhere.
+* Responsive and should work perfectly with most themes.
+* Single post template and stylesheet are both overwriteable by the theme (see FAQs).
+
+**Check out the video below for a full walkthrough:**
+
+[youtube http://www.youtube.com/watch?v=rblid85NhI0]
 
 == Installation ==
 
@@ -53,9 +59,9 @@ Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebar
 == Changelog ==
 
 = 1.0.5 =
-* Each resume gets it's own single post page now (click View Resume to see it)
+* Each resume gets it's own single post page now (click View Resume to see it) -- you can override this file with a theme/child theme.
+* Added a few *Frequently Asked Questions* to help with the use of this plugin (see FAQ tab on [WordPress.org](http://wordpress.org/plugins/resume-builder/))
 * A few other minor updates to the styling etc.
-* Added a few Frequently Asked Questions to help with the use of this plugin (see tab on WordPress.org)
 
 = 1.0 =
 * Initial release
@@ -63,6 +69,6 @@ Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebar
 == Upgrade Notice ==
 
 = 1.0.5 =
-* Each resume gets it's own single post page now (click View Resume to see it)
+* Each resume gets it's own single post page now (click View Resume to see it) -- you can override this file with a theme/child theme.
+* Added a few *Frequently Asked Questions* to help with the use of this plugin (see FAQ tab on [WordPress.org](http://wordpress.org/plugins/resume-builder/))
 * A few other minor updates to the styling etc.
-* Added a few Frequently Asked Questions to help with the use of this plugin (see tab on WordPress.org)

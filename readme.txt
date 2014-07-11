@@ -25,7 +25,11 @@ Build out your complete resume, contact info and skills list with this powerful 
 * Responsive and should work perfectly with most themes.
 * Single post template and stylesheet are both overwriteable by the theme (see FAQs).
 
-**Check out the video below for a full walkthrough:**
+**Here's a demo URL to view the results of the Resume Builder:**
+
+[http://demo.boxystudio.com/resume-builder/](http://demo.boxystudio.com/resume-builder/)
+
+**Check out the video below for a full walkthrough (on a custom theme called SELF):**
 
 [youtube http://www.youtube.com/watch?v=rblid85NhI0]
 

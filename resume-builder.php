@@ -241,10 +241,10 @@ function rb_get_resume_shortcode_help_text() {
 		
 		if (!is_array($post_ID)){
 
-			$output  = __('Full Resume: ', 'resume-builder') . ' <strong>[rb_resume id="' . $post_ID . '"]</strong><br/>';
-			$output .= __('Resume Intro: ', 'resume-builder') . ' <strong>[rb_resume_intro id="' . $post_ID . '"]</strong><br/>';
-			$output .= __('Resume Widget Skills: ', 'resume-builder') . ' <strong>[rb_resume_widget_skills id="' . $post_ID . '"]</strong><br/>';
-			$output .= __('Resume Widget Contacts: ', 'resume-builder') . ' <strong>[rb_resume_widget_contacts id="' . $post_ID . '"]</strong><br/>';
+			$output  = '<strong style="width:200px; display:inline-block;">'.__('Full Resume: ', 'resume-builder') . '</strong>[rb_resume id="' . $post_ID . '"]<br/>';
+			$output .= '<strong style="width:200px; display:inline-block;">'.__('Resume Intro: ', 'resume-builder') . '</strong>[rb_resume_intro id="' . $post_ID . '"]<br/>';
+			$output .= '<strong style="width:200px; display:inline-block;">'.__('Resume Widget Skills: ', 'resume-builder') . '</strong>[rb_resume_widget_skills id="' . $post_ID . '"]<br/>';
+			$output .= '<strong style="width:200px; display:inline-block;">'.__('Resume Widget Contacts: ', 'resume-builder') . '</strong>[rb_resume_widget_contacts id="' . $post_ID . '"]<br/>';
 		
 		}
 	
@@ -311,6 +311,17 @@ function rb_render_resume_intro($section, $output = true) {
 	} else {
 		echo ob_get_clean();
 	}
+}
+
+/* Customize the Post Template */
+add_filter( 'template_include', 'rb_resume_templates' );
+function rb_resume_templates( $template ) {
+    $post_types = array( 'rb_resume' );
+
+    if ( is_singular( $post_types ) && ! file_exists( get_stylesheet_directory() . '/single-resume.php' ) )
+        $template = plugin_dir_path( __FILE__ ).'/single-resume.php';
+
+    return $template;
 }
 
 /**

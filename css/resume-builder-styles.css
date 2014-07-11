@@ -1,5 +1,9 @@
 /* Resume Builder - Front-End Styling */
 
+/* Layout */
+.rb-resume-left { line-height:1.7; width:65%; float:left; }
+.rb-resume-right { line-height:1.7; width:25%; float:right; }
+
 /* Introduction */
 .rb-resume-block { padding:20px 0 0 0; }
 .rb-resume-block .rb-about:after { content:" "; clear:both; display:block; margin:0 0 30px; }
@@ -91,6 +95,9 @@
 
 	.rb-resume-block .rb-buttons .rb-btn + .rb-btn { margin:10px 0 0 0; }
 	.rb-resume-block .rb-btn { width:100%; display:block; margin:0; text-align:center; }
+	
+	.rb-resume-left { width:100%; float:none; margin:0 0 30px; }
+	.rb-resume-right { width:100%; float:none; }
 
 }
 

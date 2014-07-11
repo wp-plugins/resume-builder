@@ -8,7 +8,7 @@ Author: Boxy Studio
 Donate link: http://www.boxystudio.com/#coffee
 Requires at least: 3.7
 Tested up to: 3.9.1
-Version: 1.0
+Version: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,15 +26,43 @@ Build out your complete resume, contact info and skills list with this powerful 
 == Installation ==
 
 1. Upload `/resume-builder/` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Navigate to the Resumes > Add New to build out your first resume with the drag & drop builder
+1. Activate the plugin through the *Plugins* menu in WordPress
+1. Navigate to the *Resumes > Add New* to build out your first resume with the drag & drop builder
+1. Use the shortcodes provided to place your resume pieces wherever you need them (on a page, in a sidebar, etc.).
+1. Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebars/) to create sidebars for additional resumes.
+
+== Frequently Asked Questions ==
+
+= How can I customize the styling to match my theme? =
+
+Copy the contents of the `/css/resume-builder-styles.css` into a new file called `resume-builder.css`. Put this new file into the root of your theme's folder. Then you can go ahead and make your changes as you see fit.
+
+= How can I customize the post template that displays the resume? =
+
+Copy the `single-resume.php` file into the root of your theme's folder. Then you can make the changes to that file to match your theme.
+
+= How can I add more than one resume sidebar? =
+
+Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebars/) to create sidebars for additional resumes.
+
+== Screenshots ==
+
+1. Here's what the Resume Builder looks like in the admin.
+2. Here's what a final resume would look like.
 
 == Changelog ==
 
+= 1.0.5 =
+* Each resume gets it's own single post page now (click View Resume to see it)
+* A few other minor updates to the styling etc.
+* Added a few Frequently Asked Questions to help with the use of this plugin (see tab on WordPress.org)
+
 = 1.0 =
-* Initial release!
+* Initial release
 
 == Upgrade Notice ==
 
-= 1.0 =
-* Initial release!
+= 1.0.5 =
+* Each resume gets it's own single post page now (click View Resume to see it)
+* A few other minor updates to the styling etc.
+* Added a few Frequently Asked Questions to help with the use of this plugin (see tab on WordPress.org)

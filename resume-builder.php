@@ -65,11 +65,21 @@ function rb_register_post_type_resume() {
 		'hierarchical'        => false,
 		'query_var'           => false,
 		'supports'            => array('title'),
+		'rewrite'			  => array('slug' => 'resume'),
 		'menu_icon'           => 'dashicons-list-view'
 	));
 }
 
 add_action( 'admin_init', 'resume_builder_admin_init' );
+
+function rb_rewrite_flush() {
+    
+    rb_register_post_type_resume();
+    flush_rewrite_rules();
+    
+}
+
+register_activation_hook( __FILE__, 'rb_rewrite_flush' );
    
 function resume_builder_admin_init() {
 	/* Load the custom Carbon Fields styling */
@@ -318,9 +328,9 @@ add_filter( 'template_include', 'rb_resume_templates' );
 function rb_resume_templates( $template ) {
     $post_types = array( 'rb_resume' );
 
-    if ( is_singular( $post_types ) && !file_exists( get_stylesheet_directory() . '/single-resume.php' ) ):
+    if ( is_singular( $post_types ) && ! file_exists( get_stylesheet_directory() . '/single-resume.php' ) ):
         $template = plugin_dir_path( __FILE__ ).'/single-resume.php';
-    else :
+    elseif ( is_singular($post_types) && file_exists( get_stylesheet_directory() . '/single-resume.php' ) ):
     	$template = get_stylesheet_directory() . '/single-resume.php';
     endif;
 

@@ -3,7 +3,7 @@
  * Plugin Name: Resume Builder
  * Plugin URI: http://demo.boxystudio.com/resume-builder/
  * Description: A WordPress plugin to build out your resume along with contact information and related skills
- * Version: 1.0.7
+ * Version: 1.0.8
  * Author: Boxy Studio
  * Author URI: http://boxystudio.com
  * License: GPL2
@@ -381,6 +381,7 @@ function rb_resume_shortcode($atts, $content = null) {
 				echo ( !empty($s['sectiontitle']) ? '<div class="rb-section-title">' . $s['sectiontitle'] . '</div>' : '' );
 
 				foreach ($s['sectioncontent'] as $ss) {
+				
 					if ($ss['_type'] == '_text_block') {
 						echo '<div class="rb-text-block">';
 							echo apply_filters('the_content', $ss['text']);
@@ -446,7 +447,7 @@ function rb_resume_widget_skills_shortcode($atts, $content = null) {
 	echo '<div class="rb-widget-experience">';
 
 	# Widget Title
-	$widget_title = carbon_get_post_meta($resume->ID, 'rb_resume_widget_title');
+	$widget_title = carbon_get_post_meta($resume->ID, 'rb_resume_widget_skills_title');
 	if ( !empty($widget_title) ) {
 		echo '<h3 class="widget-title">' . $widget_title . '</h3>';
 	}

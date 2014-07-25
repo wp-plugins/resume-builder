@@ -8,7 +8,7 @@ Author: Boxy Studio
 Donate link: http://www.boxystudio.com/#coffee
 Requires at least: 3.7
 Tested up to: 3.9.1
-Version: 1.0.7
+Version: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,7 +62,10 @@ Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebar
 
 == Changelog ==
 
-= 1.0.6 =
+= 1.0.8 =
+* Fixed a bug with the Skills title not showing up
+
+= 1.0.7 =
 * Each resume gets it's own single post page now (click View Resume to see it) -- you can override this file with a theme/child theme.
 * Added a few *Frequently Asked Questions* to help with the use of this plugin (see FAQ tab on [WordPress.org](http://wordpress.org/plugins/resume-builder/))
 * A few other minor updates to the styling etc.
@@ -72,7 +75,5 @@ Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebar
 
 == Upgrade Notice ==
 
-= 1.0.5 =
-* Each resume gets it's own single post page now (click View Resume to see it) -- you can override this file with a theme/child theme.
-* Added a few *Frequently Asked Questions* to help with the use of this plugin (see FAQ tab on [WordPress.org](http://wordpress.org/plugins/resume-builder/))
-* A few other minor updates to the styling etc.
+= 1.0.8 =
+* Fixed a bug with the Skills title not showing up

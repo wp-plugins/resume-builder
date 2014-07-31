@@ -8,7 +8,7 @@ Author: Boxy Studio
 Donate link: http://www.boxystudio.com/#coffee
 Requires at least: 3.7
 Tested up to: 3.9.1
-Version: 1.0.10
+Version: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,8 +62,8 @@ Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebar
 
 == Changelog ==
 
-= 1.0.10 =
-* Fixed a bug where some servers would mess up the sorting for some reason
+= 1.1 =
+* Fixed a bug (for real this time!) where some servers would mess up the sorting for some reason
 
 = 1.0.8 =
 * Fixed a bug with the Skills title not showing up
@@ -78,5 +78,5 @@ Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebar
 
 == Upgrade Notice ==
 
-= 1.0.10 =
-* Fixed a bug where some servers would mess up the sorting for some reason
+= 1.1 =
+* Fixed a bug (for real this time!) where some servers would mess up the sorting for some reason

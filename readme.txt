@@ -7,7 +7,7 @@ Author URI: http://www.boxystudio.com
 Author: Boxy Studio
 Donate link: http://www.boxystudio.com/#coffee
 Requires at least: 3.7
-Tested up to: 3.9.1
+Tested up to: 4.1
 Version: 1.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

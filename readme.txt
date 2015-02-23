@@ -7,8 +7,8 @@ Author URI: http://www.boxystudio.com
 Author: Boxy Studio
 Donate link: http://www.boxystudio.com/#coffee
 Requires at least: 3.7
-Tested up to: 4.1
-Version: 1.1.5
+Tested up to: 4.1.1
+Version: 1.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,9 @@ Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebar
 2. Here's what a final resume would look like.
 
 == Changelog ==
+
+= 1.1.6 =
+* Fixed some shortcode issues.
 
 = 1.1.5 =
 * FontAwesome update

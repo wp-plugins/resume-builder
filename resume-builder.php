@@ -3,7 +3,7 @@
  * Plugin Name: Resume Builder
  * Plugin URI: http://demo.boxystudio.com/resume-builder/
  * Description: A WordPress plugin to build out your resume along with contact information and related skills
- * Version: 1.1.5
+ * Version: 1.1.6
  * Author: Boxy Studio
  * Author URI: http://boxystudio.com
  * License: GPL2
@@ -342,6 +342,9 @@ function rb_resume_templates( $template ) {
  */
 add_shortcode('rb_resume', 'rb_resume_shortcode');
 function rb_resume_shortcode($atts, $content = null) {
+	
+	ob_start();
+	
 	shortcode_atts(
 		array(
 			'id' => false,
@@ -428,6 +431,8 @@ function rb_resume_shortcode($atts, $content = null) {
 	
 	echo '</div>';
 	
+	return ob_get_clean();
+	
 }
 
 /**
@@ -435,6 +440,9 @@ function rb_resume_shortcode($atts, $content = null) {
  */
 add_shortcode('rb_resume_widget_skills', 'rb_resume_widget_skills_shortcode');
 function rb_resume_widget_skills_shortcode($atts, $content = null) {
+	
+	ob_start();
+	
 	shortcode_atts(array(
 		'id' => false,
 	), $atts);
@@ -487,6 +495,9 @@ function rb_resume_widget_skills_shortcode($atts, $content = null) {
 	}
 
 	echo '</div>';
+	
+	return ob_get_clean();
+	
 }
 
 /**
@@ -494,6 +505,7 @@ function rb_resume_widget_skills_shortcode($atts, $content = null) {
  */
 add_shortcode('rb_resume_widget_contacts', 'rb_resume_widget_contacts_shortcode');
 function rb_resume_widget_contacts_shortcode($atts, $content = null) {
+	
 	shortcode_atts(array(
 		'id' => false,
 	), $atts);
@@ -577,6 +589,9 @@ function rb_resume_widget_contacts_shortcode($atts, $content = null) {
  */
 add_shortcode('rb_resume_intro', 'rb_resume_intro_shortcode');
 function rb_resume_intro_shortcode($atts, $content = null) {
+	
+	ob_start();
+	
 	shortcode_atts(array(
 		'id' => false,
 	), $atts);
@@ -601,11 +616,10 @@ function rb_resume_intro_shortcode($atts, $content = null) {
 	foreach ($sections as $section) {
 		if ($section['_type'] == '_introduction_block') {
 			$output = '<div class="rb-resume-block"><div class="rb-about">'.rb_render_resume_intro($section, false).'</div></div>';
-			echo $output;
 		}
 	}
 	
-	return;
+	return ob_get_clean();
 }
 
 /**

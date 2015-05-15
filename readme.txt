@@ -27,7 +27,7 @@ Build out your complete resume, contact info and skills list with this powerful 
 
 **Here's a demo URL to view the results of the Resume Builder:**
 
-[http://demo.boxystudio.com/resume-builder/](http://demo.boxystudio.com/resume-builder/)
+[http://resume-builder.boxydemos.com/](http://resume-builder.boxydemos.com/)
 
 **Check out the video below for a full walkthrough (on a custom theme called SELF):**
 

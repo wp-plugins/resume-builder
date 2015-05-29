@@ -3,7 +3,7 @@
  * Plugin Name: Resume Builder
  * Plugin URI: http://demo.boxystudio.com/resume-builder/
  * Description: A WordPress plugin to build out your resume along with contact information and related skills
- * Version: 1.1.80
+ * Version: 1.1.81
  * Author: Boxy Studio
  * Author URI: http://boxystudio.com
  * License: GPL2
@@ -328,10 +328,12 @@ add_filter( 'template_include', 'rb_resume_templates' );
 function rb_resume_templates( $template ) {
     $post_types = array( 'rb_resume' );
 
-    if ( is_singular( $post_types ) && ! file_exists( get_stylesheet_directory() . '/single-resume.php' ) ):
+    if ( is_singular( $post_types ) && !file_exists( get_stylesheet_directory() . '/single-resume.php' ) && !file_exists( get_template_directory() . '/single-resume.php' ) ):
         $template = plugin_dir_path( __FILE__ ).'/single-resume.php';
     elseif ( is_singular($post_types) && file_exists( get_stylesheet_directory() . '/single-resume.php' ) ):
     	$template = get_stylesheet_directory() . '/single-resume.php';
+    elseif ( is_singular($post_types) && file_exists( get_template_directory() . '/single-resume.php' ) ):
+    	$template = get_template_directory() . '/single-resume.php';
     endif;
 
     return $template;

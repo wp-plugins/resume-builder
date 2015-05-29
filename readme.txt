@@ -8,7 +8,7 @@ Author: Boxy Studio
 Donate link: http://www.boxystudio.com/#coffee
 Requires at least: 4.0
 Tested up to: 4.2.2
-Version: 1.1.80
+Version: 1.1.81
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,9 @@ Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebar
 2. Here's what a final resume would look like.
 
 == Changelog ==
+
+= 1.1.81 =
+* Fixed an issue where the single resume template wouldn't work right with child themes.
 
 = 1.1.8 =
 * Fixed an issue where some shortcodes wouldn't display in the correct place.

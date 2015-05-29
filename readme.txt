@@ -1,14 +1,14 @@
 === Plugin Name ===
 Contributors: boxystudio
 Plugin Name: Resume Builder
-Plugin URI: http://demo.boxystudio.com/resume-builder
+Plugin URI: http://resume-builder.boxydemos.com
 Tags: resume, vcard, self promotion, skills, education, experience
 Author URI: http://www.boxystudio.com
 Author: Boxy Studio
 Donate link: http://www.boxystudio.com/#coffee
-Requires at least: 3.7
-Tested up to: 4.1.1
-Version: 1.1.75
+Requires at least: 4.0
+Tested up to: 4.2.2
+Version: 1.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,7 +27,7 @@ Build out your complete resume, contact info and skills list with this powerful 
 
 **Here's a demo URL to view the results of the Resume Builder:**
 
-[http://resume-builder.boxydemos.com/](http://resume-builder.boxydemos.com/)
+[http://demo.boxystudio.com/resume-builder/](http://demo.boxystudio.com/resume-builder/)
 
 **Check out the video below for a full walkthrough (on a custom theme called SELF):**
 
@@ -61,6 +61,9 @@ Use a plugin like [Custom Sidebars](https://wordpress.org/plugins/custom-sidebar
 2. Here's what a final resume would look like.
 
 == Changelog ==
+
+= 1.1.8 =
+* Fixed an issue where some shortcodes wouldn't display in the correct place.
 
 = 1.1.75 =
 * Fixed the issues I broke with the last update. Sorry about that folks!

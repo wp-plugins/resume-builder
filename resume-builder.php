@@ -3,7 +3,7 @@
  * Plugin Name: Resume Builder
  * Plugin URI: http://demo.boxystudio.com/resume-builder/
  * Description: A WordPress plugin to build out your resume along with contact information and related skills
- * Version: 1.1.75
+ * Version: 1.1.8
  * Author: Boxy Studio
  * Author URI: http://boxystudio.com
  * License: GPL2
@@ -382,7 +382,7 @@ function rb_resume_shortcode($atts, $content = null) {
 			} elseif ( $s['_type'] == '_default_block' && !empty($s['sectioncontent']) ) {
 			
 				// Sort the section content by key (for those servers that are messing with the order for some reason)
-+				ksort($s['sectioncontent']);
+				ksort($s['sectioncontent']);
 			
 				# Section Title
 				echo ( !empty($s['sectiontitle']) ? '<div class="rb-section-title">' . $s['sectiontitle'] . '</div>' : '' );
@@ -496,8 +496,7 @@ function rb_resume_widget_skills_shortcode($atts, $content = null) {
 
 	echo '</div>';
 	
-	$output = ob_get_clean();
-	echo $output;
+	return ob_get_clean();
 	
 }
 
@@ -581,8 +580,7 @@ function rb_resume_widget_contacts_shortcode($atts, $content = null) {
 
 	echo '</div>';
 
-	$output = ob_get_clean();
-	echo $output;
+	return ob_get_clean();
 }
 
 /**
@@ -669,7 +667,7 @@ class RB_Resume_Widget extends WP_Widget {
 	 */
 	function widget($args, $instance) {
 		echo '<aside class="widget rb-widget">';
-		do_shortcode($instance['rb-shortcode']);
+		echo do_shortcode($instance['rb-shortcode']);
 		echo '</aside>';
 	}
 }
